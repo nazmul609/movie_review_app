@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131720;
+  font-family: sans-serif;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #131720;
+  padding: 10px;
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.topnav .search-container{
+  float: right;
+}
+
+form{
+  background-color: #151f30;
+  width: 300px;
+  height: 43px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  font: 15px system-ui;
+  color: black;
+  height: 100%;
+  width: 100%;
+  padding: 6px 9px;
+}
+
+.thumbnail {
+  height: 350px;
+  width: 300px;
+  border-radius: 19px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+}
+
+.card{
+  border-radius: 19px;
+  padding: 0px;
+  text-align: center;
+  background-color: #151f30;
+}
+.card h3 {
+
+  margin: 0;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for long titles */
+  color: white;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .topnav {
+    padding: 5px;
+  }
+
+  .topnav a {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .column {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1025px) {
+  .column {
+    width: 25%;
+  }
+}
